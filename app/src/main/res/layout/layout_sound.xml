@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:textColor="@color/white"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/sound_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/sound_title"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:textSize="17sp"
+        android:maxLength="50"
+        android:drawableLeft="@drawable/ic_music_2"
+        android:text=" Tên Bài Hát"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/sound_img"
+        app:layout_constraintTop_toTopOf="@+id/sound_img" />
+
+    <TextView
+        android:id="@+id/sound_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:drawableLeft="@drawable/ic_music_2"
+        android:layout_marginStart="9dp"
+        android:textSize="17sp"
+        android:maxLength="50"
+        android:text=" Đường dẫn liên kết "
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/sound_img"
+        app:layout_constraintStart_toEndOf="@+id/sound_img"
+        app:layout_constraintTop_toBottomOf="@+id/sound_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

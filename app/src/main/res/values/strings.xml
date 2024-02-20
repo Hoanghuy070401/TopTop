@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Toptop</string>
+    <string name="facebook_app_id">4769242326533090</string>
+    <string name="play">play</string>
+    <string name="pause">pause</string>
+    <string name="app_record">Record Video</string>
+</resources>
